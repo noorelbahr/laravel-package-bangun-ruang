@@ -1,0 +1,41 @@
+{
+    "name": "noorelbahr/bangun-ruang",
+    "description": "Library untuk menghitung bangun ruang",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nurul Bahri",
+            "email": "nurulbahri@hotmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^7.3"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.1"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "NoorElbahr\\BangunRuang\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NoorElbahr\\BangunRuang\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NoorElbahr\\BangunRuang\\Providers\\BangunRuangServiceProvider"
+            ],
+            "aliases": {
+                "PersegiPanjang": "NoorElbahr\\BangunRuang\\Facades\\PersegiPanjang"
+            }
+        }
+    }
+}
